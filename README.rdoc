@@ -55,6 +55,11 @@ http://dev.1c-bitrix.ru/community/forums/forum6/topic7878/
 	$arFields["PASSWORD"] = $salt.md5($salt.$arFields["PASSWORD"]);
 
 
+== PHP/1С-Битрикс
+
+    ./public_html/bitrix/modules/main/classes/general/user.php
+
+
 == Contributing to devise_bitrix
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
