@@ -1,7 +1,9 @@
 #!/usr/bin/ruby
+# -*- coding: undecided -*-
 require 'digest/md5'
 
 # "abcdefghijklnmopqrstuvwxyz"+"ABCDEFGHIJKLNMOPQRSTUVWXYZ"+"0123456789"+",.<>/?;:[]{}\|~!@#\$%^&*()-_+="
+# русский текст
 
 def check_password(digest, password)
   salt = digest.slice(0,8)
@@ -10,3 +12,5 @@ def check_password(digest, password)
 end
 
 puts check_password('5~JtW3b%ddcc8284b927ddfeffa8464cff8ed416', 'visavis')
+
+
